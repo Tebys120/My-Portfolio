@@ -1,4 +1,3 @@
-import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import imgWebp from "../assets/background-main.webp";
 import imgJpg from "../assets/background-main.jpg";
@@ -11,13 +10,13 @@ const Main = () => {
     <div id="main">
       {isWebpSupported ? (
         <img
-          className="w-full h-screen object-cover lg:object-left scale-x-[-1]"
+          className="w-full h-screen object-cover lg:object-fill lg:object-left scale-x-[-1]"
           src={imgWebp}
           alt="background"
         />
       ) : (
         <img
-          className="w-full h-screen object-cover lg:object-left scale-x-[-1]"
+          className="w-full h-screen object-cover lg:object-fill lg:object-left scale-x-[-1]"
           src={imgJpg}
           alt="background"
         />
