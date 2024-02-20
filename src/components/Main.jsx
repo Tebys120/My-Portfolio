@@ -1,26 +1,15 @@
 import { TypeAnimation } from "react-type-animation";
-import imgWebp from "../assets/background-main.webp";
-import imgJpg from "../assets/background-main.jpg";
+import imgBackgWebp from "../assets/background-main.webp";
+import imgBackgJpg from "../assets/background-main.jpg";
 import { FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
+import ConditionalImage from "./ConditionalImage";
 
 const Main = () => {
-  const isWebpSupported = typeof navigator !== "undefined" && navigator?.webp;
+
 
   return (
     <div id="main">
-      {isWebpSupported ? (
-        <img
-          className="w-full h-screen object-cover lg:object-fill lg:object-left scale-x-[-1]"
-          src={imgWebp}
-          alt="background"
-        />
-      ) : (
-        <img
-          className="w-full h-screen object-cover lg:object-fill lg:object-left scale-x-[-1]"
-          src={imgJpg}
-          alt="background"
-        />
-      )}
+      <ConditionalImage className="w-full h-screen object-cover lg:object-fill lg:object-left scale-x-[-1]" imgWebp={imgBackgWebp} imgJpg={imgBackgJpg}/>
       <div className="w-full h-screen absolute top-0 left-0 bg-white/5">
         <div className="max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-gray-800">
