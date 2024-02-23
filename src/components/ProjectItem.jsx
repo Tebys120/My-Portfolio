@@ -9,10 +9,10 @@ const ProjectItem = ({imgWebp, imgJpg, title, description}) => {
             <h3 className='text-2xl font-bold text-white tracking-wider text-center'>
                 {title}
             </h3>
-            <p className='pb-4 pt-2 text-white text-center'>Test</p>
+            <p className='pb-4 pt-2 text-white text-center'>{description}</p>
             <a href="/">
-                <p className='text-center p-3 rounded-ld bg-white text-gray-700 font-bold cursor-pointer text-lg'>{description}</p>
-            </a>
+                <p className='text-center p-2 rounded-full bg-white text-gray-700 font-bold cursor-pointer text-lg hover:scale-110 ease-in duration-200'>Go Check</p>
+            </a> 
         </div>
     </div>
   )

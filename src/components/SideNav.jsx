@@ -3,8 +3,8 @@ import {
   AiOutlineMenu,
   AiOutlineHome,
   AiOutlineProject,
-  AiOutlineMail,
 } from "react-icons/ai";
+import { FaRegLightbulb } from "react-icons/fa";
 import { BsPerson } from "react-icons/bs";
 import { GrProjects } from "react-icons/gr";
 
@@ -53,8 +53,8 @@ const SideNav = () => {
             href="#contact"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
-            <AiOutlineMail size={20} />
-            <span className="pl-4">Contact</span>
+            <FaRegLightbulb  size={20} />
+            <span className="pl-4">light mode</span>
           </a>
         </div>
       ) : (
@@ -88,10 +88,10 @@ const SideNav = () => {
             <BsPerson size={20} />
           </a>
           <a
-            href="#contact"
+            href="#lightmode"
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
           >
-            <AiOutlineMail size={20} />
+            <FaRegLightbulb size={20} />
           </a>
         </div>
       </div>
