@@ -1,3 +1,4 @@
+import 'normalize.css';
 import Main from "./components/Main";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
